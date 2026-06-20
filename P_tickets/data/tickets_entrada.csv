@@ -1,0 +1,19 @@
+id,descripcion,fecha
+TCK-001,No hay señal de internet wifi en el pabellón A tercer piso y no carga nada,2026-06-20
+TCK-002,El monitor de la computadora del laboratorio 302 parpadea y no da video,2026-06-20
+TCK-003,Necesito que instalen Visual Studio Code y Python en la máquina para la clase de Ciencia de Datos,2026-06-20
+TCK-004,Olvidé mi contraseña de mi portal de alumno cibertec y no puedo ingresar a ver mis notas,2026-06-20
+TCK-005,Me llegó un correo sospechoso de phishing pidiendo mis datos bancarios en el correo institucional,2026-06-20
+TCK-006,¿A qué hora cierra la biblioteca del campus los días sábados?,2026-06-20
+TCK-007,El cable de red ethernet de la PC 12 en el laboratorio 401 está roto y no conecta,2026-06-21
+TCK-008,El mouse de la máquina 15 no se mueve y el teclado tampoco responde para nada,2026-06-21
+TCK-009,Me sale un mensaje de error de licencia expirada al intentar abrir Microsoft Excel,2026-06-21
+TCK-010,Mi cuenta de Blackboard está bloqueada y tengo un examen parcial programado para hoy,2026-06-21
+TCK-011,El antivirus de la máquina me arrojó una alerta crítica de un troyano al descargar un archivo,2026-06-21
+TCK-012,Quiero solicitar información sobre un trámite para un cambio de sección de ciclo,2026-06-21
+TCK-013,La red inalámbrica de estudiantes está extremadamente lenta y se desconecta a cada rato,2026-06-22
+TCK-014,La impresora del pasadizo principal se ha atascado con papel y tiene la pantalla en rojo,2026-06-22
+TCK-015,No puedo ejecutar mi script de Python porque dice que falta la librería pandas en esta PC,2026-06-22
+TCK-016,Error de credenciales inválidas al ingresar a la plataforma virtual de Cibertec,2026-06-22
+TCK-017,Se detectó un intento de acceso no autorizado a mi cuenta institucional desde otra dirección IP,2026-06-22
+TCK-018,¿Dónde o con quién puedo recoger mi carné de estudiante de este ciclo académico?,2026-06-22
