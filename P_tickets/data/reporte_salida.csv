@@ -1,19 +1,19 @@
-id_ticket,descripcion,fecha,categoria
-TCK-001,no hay señal de internet wifi en el pabellón a tercer piso y no carga nada,2026-06-20,acceso
-TCK-002,el monitor de la computadora del laboratorio 302 parpadea y no da video,2026-06-20,hardware
-TCK-003,necesito que instalen visual studio code y python en la máquina para la clase de ciencia de datos,2026-06-20,software
-TCK-004,olvidé mi contraseña de mi portal de alumno cibertec y no puedo ingresar a ver mis notas,2026-06-20,seguridad
-TCK-005,me llegó un correo sospechoso de phishing pidiendo mis datos bancarios en el correo institucional,2026-06-20,seguridad
-TCK-006,¿a qué hora cierra la biblioteca del campus los días sábados?,2026-06-20,acceso
-TCK-007,el cable de red ethernet de la pc 12 en el laboratorio 401 está roto y no conecta,2026-06-21,red
-TCK-008,el mouse de la máquina 15 no se mueve y el teclado tampoco responde para nada,2026-06-21,hardware
-TCK-009,me sale un mensaje de error de licencia expirada al intentar abrir microsoft excel,2026-06-21,software
-TCK-010,mi cuenta de blackboard está bloqueada y tengo un examen parcial programado para hoy,2026-06-21,software
-TCK-011,el antivirus de la máquina me arrojó una alerta crítica de un troyano al descargar un archivo,2026-06-21,hardware
-TCK-012,quiero solicitar información sobre un trámite para un cambio de sección de ciclo,2026-06-21,acceso
-TCK-013,la red inalámbrica de estudiantes está extremadamente lenta y se desconecta a cada rato,2026-06-22,red
-TCK-014,la impresora del pasadizo principal se ha atascado con papel y tiene la pantalla en rojo,2026-06-22,red
-TCK-015,no puedo ejecutar mi script de python porque dice que falta la librería pandas en esta pc,2026-06-22,software
-TCK-016,error de credenciales inválidas al ingresar a la plataforma virtual de cibertec,2026-06-22,acceso
-TCK-017,se detectó un intento de acceso no autorizado a mi cuenta institucional desde otra dirección ip,2026-06-22,acceso
-TCK-018,¿dónde o con quién puedo recoger mi carné de estudiante de este ciclo académico?,2026-06-22,acceso
+id_ticket,descripcion,fecha,categoria,prioridad
+TCK-001,no hay señal de internet wifi en el pabellón a tercer piso y no carga nada,2026-06-20,acceso,ALTA
+TCK-002,el monitor de la computadora del laboratorio 302 parpadea y no da video,2026-06-20,hardware,BAJA
+TCK-003,necesito que instalen visual studio code y python en la máquina para la clase de ciencia de datos,2026-06-20,software,BAJA
+TCK-004,olvidé mi contraseña de mi portal de alumno cibertec y no puedo ingresar a ver mis notas,2026-06-20,seguridad,MEDIA
+TCK-005,me llegó un correo sospechoso de phishing pidiendo mis datos bancarios en el correo institucional,2026-06-20,seguridad,MEDIA
+TCK-006,¿a qué hora cierra la biblioteca del campus los días sábados?,2026-06-20,acceso,BAJA
+TCK-007,el cable de red ethernet de la pc 12 en el laboratorio 401 está roto y no conecta,2026-06-21,red,ALTA
+TCK-008,el mouse de la máquina 15 no se mueve y el teclado tampoco responde para nada,2026-06-21,hardware,BAJA
+TCK-009,me sale un mensaje de error de licencia expirada al intentar abrir microsoft excel,2026-06-21,software,BAJA
+TCK-010,mi cuenta de blackboard está bloqueada y tengo un examen parcial programado para hoy,2026-06-21,software,BAJA
+TCK-011,el antivirus de la máquina me arrojó una alerta crítica de un troyano al descargar un archivo,2026-06-21,hardware,CRITICA
+TCK-012,quiero solicitar información sobre un trámite para un cambio de sección de ciclo,2026-06-21,acceso,BAJA
+TCK-013,la red inalámbrica de estudiantes está extremadamente lenta y se desconecta a cada rato,2026-06-22,red,ALTA
+TCK-014,la impresora del pasadizo principal se ha atascado con papel y tiene la pantalla en rojo,2026-06-22,red,BAJA
+TCK-015,no puedo ejecutar mi script de python porque dice que falta la librería pandas en esta pc,2026-06-22,software,BAJA
+TCK-016,error de credenciales inválidas al ingresar a la plataforma virtual de cibertec,2026-06-22,acceso,ALTA
+TCK-017,se detectó un intento de acceso no autorizado a mi cuenta institucional desde otra dirección ip,2026-06-22,acceso,MEDIA
+TCK-018,¿dónde o con quién puedo recoger mi carné de estudiante de este ciclo académico?,2026-06-22,acceso,BAJA

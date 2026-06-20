@@ -4,6 +4,7 @@ class Ticket:
         self.descripcion = descripcion
         self.fecha = fecha
         self.categoria = None  # Se clasifica y asignará con la IA
+        self.prioridad = None
 
     def asignar_categoria(self, categoria):
         self.categoria = categoria

@@ -5,6 +5,29 @@ from nlp.clasificador import ClasificadorIA
 from database.db_manager import DBManager
 from utils.preprocesamiento import limpiar_texto
 
+
+def obtener_prioridad(texto):
+    texto = texto.lower()
+
+    if any(palabra in texto for palabra in [
+        'servidor', 'caido', 'caída', 'hackeo',
+        'virus', 'malware', 'ataque'
+    ]):
+        return 'CRITICA'
+
+    elif any(palabra in texto for palabra in [
+        'internet', 'red', 'wifi', 'conexion'
+    ]):
+        return 'ALTA'
+
+    elif any(palabra in texto for palabra in [
+        'correo', 'acceso', 'contraseña', 'password'
+    ]):
+        return 'MEDIA'
+
+    return 'BAJA'
+
+
 def main():
     print("=== SISTEMA CLASIFICADOR DE TICKETS CIBERTEC ===")
     
@@ -30,7 +53,11 @@ def main():
                 print(f"Clasificando ticket {nuevo_ticket.id_ticket}...")
                 categoria_asignada = ia.clasificar_ticket(nuevo_ticket.descripcion)
                 nuevo_ticket.asignar_categoria(categoria_asignada)
-                
+
+                prioridad = obtener_prioridad(nuevo_ticket.descripcion)
+                nuevo_ticket.prioridad = prioridad
+
+
                 # Base de Datos
                 db.insertar_ticket(nuevo_ticket)
                 tickets_procesados.append(nuevo_ticket)
@@ -42,7 +69,7 @@ def main():
     if tickets_procesados:
         try:
             with open(ruta_salida, mode='w', newline='', encoding='utf-8') as archivo_salida:
-                campos = ['id_ticket', 'descripcion', 'fecha', 'categoria']
+                campos = ['id_ticket', 'descripcion', 'fecha', 'categoria', 'prioridad']
                 escritor = csv.DictWriter(archivo_salida, fieldnames=campos)
                 escritor.writeheader()
                 for t in tickets_procesados:
@@ -50,7 +77,8 @@ def main():
                         'id_ticket': t.id_ticket,
                         'descripcion': t.descripcion,
                         'fecha': t.fecha,
-                        'categoria': t.categoria
+                        'categoria': t.categoria,
+                        'prioridad': t.prioridad
                     })
             print("===================================================")
             print("¡Proceso Finalizado! Reporte generado exitosamente.")
